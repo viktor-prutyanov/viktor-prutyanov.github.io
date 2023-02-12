@@ -1,6 +1,5 @@
 ---
 title:  "Getting started with Linux and BusyBox for RISC-V on QEMU"
-mathjax: true
 layout: post
 categories: engineering
 ---
