@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <head>
-<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+{%- seo -%}
+<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relative_url }}">
 <meta name="google-site-verification" content="OkRBCd8fnHHhP5YCQf5c5C73LUE-Kwj2K9YWN5wu32g"/>
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="{{ page.author | default: site.author | escape }}">
-<meta name="generator" content="Jekyll v{{ jekyll.version }}">
-</head>
-<link rel="canonical" href="{{ page.url | absolute_url }}">
 {% if site.show_frame %}
 <link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}">
 {% else %}
 <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
 {% endif %}
 {% if site.plugins contains "jekyll-feed" %}<link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">{% endif %}
+</head>
 {% include sidebar.html %}
 
 {% if site.navigation %}
