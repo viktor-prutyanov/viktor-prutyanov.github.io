@@ -2,6 +2,7 @@
 title:  "Getting started with Linux and BusyBox for RISC-V on QEMU"
 layout: post
 categories: engineering
+long: true
 ---
 
 In this blog post, we will discuss emulating 64-bit RISC-V system on QEMU and running Linux and BusyBox on this system. We'll explore step-by-step how to build Linux kernel, QEMU and BusyBox for 64-bit RISC-V target. There is a [guide from RISC-V foundation](https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html) on that topic, but it doesn't cover many important points.
